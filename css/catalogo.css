@@ -1,0 +1,148 @@
+*{
+	padding: 0;
+	margin : 0;
+}
+body{
+	font-family: verdana, sans-serif;
+}
+input[type="checkbox"]{
+	display: none;
+}
+p{
+	text-align : center;
+	font-size  : 11px;
+}
+.clearfix{
+	clear: both;
+}
+nav{
+	height    : 50px;
+	width     : auto;
+	background: rgba(0,0,0,.3);
+}
+	nav .title{
+		float : left;
+		width : 30%;
+		height: 50px;
+	}
+		nav .title h2{
+			letter-spacing: 1px;
+			font-weight   : 100;
+			padding       : 2% 0 0 10%;
+		}
+	nav ul{
+		display        : flex;
+		justify-content: flex-end;
+	}
+		nav ul li{
+			list-style: none;
+			padding   : 1.5% 3%;
+			display   : inline-block; 
+		}
+			nav ul li a{
+				letter-spacing : 1px;
+				color          : white;
+				text-decoration: none;
+			}
+				nav ul li a:hover{
+					color: #1883ba;
+					text-decoration: underline;
+				}
+.contenedor{
+	width  : 80%;
+	display: flex;
+	margin : 1% 0 0 8%;
+}
+.contenedor2{
+	width  : 80%;
+	display: flex;
+	margin : 0 0 0 8%;
+}
+.contenedor3{
+	width  : 80%;
+	display: flex;
+	margin : 0 0 0 8%;
+}
+.contenedor4{
+	width  : 80%;
+	display: flex;
+	margin : 0 0 0 8%;
+}
+.caja{
+	width  : 20%;
+	padding: 5px 10px;
+}
+.caja2{
+	width  : 20%;
+	padding: 5px 10px;
+}
+.caja4{
+	padding: 5px 10px;
+}
+label{
+	border               : 1px solid #D8D8D8;
+	border-radius        : 4%;
+	padding              : 10px;
+	display              : block;
+	position             : relative;
+	margin               : 10px;
+	cursor               : pointer;
+	-webkit-touch-callout: none;
+	-webkit-user-select  : none;
+	-khtml-user-select   : none;
+	-moz-user-select     : none;
+	-ms-user-select      : none;
+	user-select          : none;
+}
+	label::before{
+		color              : white;
+		background-color   : #fff;
+		content            : " ";
+		display            : block;
+		position           : absolute;
+		border-radius      : 50%;
+		border             : 1px solid grey;
+		top                : -5px;
+		left               : -5px;
+		width              : 25px;
+		height             : 25px;
+		text-align         : center;
+		line-height        : 28px;
+		transition-duration: 0.4s;
+		transform          : scale(0);
+	}
+	label img{
+		height             : 100px;
+		width              : 150px;
+		transition-duration: 0.2s;
+		transform-origin   : 50% 50%;
+	}
+		:checked + label{
+		background-color: rgba(0,0,0,0.1);
+		border-color    : #ddd;
+		}
+			:checked + label::before {
+				content         : "✓";
+				background-color: #007bff;
+				transform       : scale(1);
+			}
+			:checked + label img{
+				transform : scale(0.9);
+				box-shadow: 0 0 5px #333;
+				z-index   : -1;
+			}
+.btn{
+	margin: 1% auto;
+	width: 25%;
+}
+	#btn{
+		font-size       : 15px;
+		border-radius   : 5px;
+		background-color: #56baed;
+		color           : white;
+		padding         : 3% 20%;
+		font-weight     : 100;
+	}
+		#btn:hover{
+			background: #39ace7;
+		}

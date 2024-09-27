@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Detalle de Compra</title>
+	<link rel="stylesheet" type="text/css" href="css/detalle.css">
+</head>
+<body>
+	<nav>
+		<div class="title">
+			<h2>Librería X</h2>
+		</div>
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="catalogo.html">Productos</a></li>
+			<li><a href="#">Salir</a></li>
+		</ul>
+	</nav>
+	<div class="titulo">
+		<h2>Detalle de la compra</h2>
+	</div>
+	<div class="contenedor">
+		<table class="tabla">
+				<tr id="firstrow">
+					<th>Producto</th>
+					<th>Precio</th>
+				</tr>
+				<tr>
+					<td>Cartulina</td>
+					<td>2500</td>
+				</tr>
+				<tr>
+					<td>Cuaderno 100 hjs</td>
+					<td>1100</td>
+				</tr>	
+				<tr>
+					<td>Tijeras</td>
+					<td>900</td>
+				</tr>
+		</table>
+		<div class="total">
+			<label for="label">A pagar:</label>
+			<input type="text" name="total" value="4500" readonly disabled>
+		</div>
+	</div>
+	<div class="direccion">
+		<label for="direccion">Ingrese su dirección para el despacho</label>
+		<input type="text" name="direccion" required>
+	</div>
+	<div class="btn">
+		<input type="submit" name="btn" value="Comprar" id="btn">
+	</div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.clear-fixed{
+	clear: both;
+}
+img{
+	width: 250px;
+	height: 200px;
+	border-radius: 4%;
+}
+.contenedor{
+	width: 100%;
+	display: inline-flex;
+}
+.caja{
+	margin: 2% 4%;
+	padding: 1% 2%;
+	border: 1px solid #d8d8d8;
+	border-radius: 4%;
+}
+.text{
+}
+.text h3{
+	text-align: center;
+	letter-spacing: 1px;
+}
+.text p{
+	text-align: center;
+}
+.text select{
+	width: 100%;
+	font-size: 15px;
+}

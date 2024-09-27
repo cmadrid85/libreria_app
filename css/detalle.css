@@ -1,0 +1,142 @@
+*{
+	padding    : 0;
+	margin     : 0;
+	font-family: verdana, sans-serif;
+}
+nav{
+	height    : 50px;
+	width     : auto;
+	background: rgba(0,0,0,.3);
+}
+	nav .title{
+		float : left;
+		width : 30%;
+		height: 50px;
+	}
+		nav .title h2{
+			letter-spacing: 1px;
+			font-weight   : 100;
+			padding       : 3% 0 0 10%;
+		}
+	nav ul{
+		display        : flex;
+		justify-content: flex-end;
+	}
+		nav ul li{
+			list-style: none;
+			padding   : 1.5% 3%;
+			display   : inline-block;
+		}
+			nav ul li a{
+				letter-spacing : 1px;
+				color          : white;
+				text-decoration: none;
+			}
+				nav ul li a:hover{
+					color          : #1883ba;
+					text-decoration: underline;
+				}
+.titulo{
+	max-width: 70%;
+	margin   : 2% auto;
+}
+		.titulo h2{
+			font-family   : verdana, sans-serif;
+			font-size     : 25px;
+			font-weight   : 100;
+			letter-spacing: 1px;
+			text-align    : center;
+		}
+.contenedor{
+	max-width: 90%;
+	margin   : 1% 0 0 5%;
+}
+/* ***** TABLA ***** */
+.tabla{
+	border-collapse: collapse;
+	width          : 70%;
+	margin         : 0 auto;
+	text-align     : center;
+	font-family    : verdana, sans-serif;
+}
+th, td{
+	padding  : 1rem;
+	font-size: 1rem;
+}
+tr{
+	background: hsl(50, 50%, 80%);
+}
+tr, td{
+	transition: .4s ease-in;
+}
+tr:first-child{
+	background: #56baed;
+}
+tr:nth-child(even){
+	background: hsla(50, 50%, 80%, 0.7);
+}
+td:empy{
+	background: hsla(50, 25%, 60%, 0.7);
+}
+tr:hover:not(#firstrow), tr:hover td:empy{
+	background    : #ff0;
+	pointer-events: visible;
+}
+tr:hover:not(#firstrow){
+	transform : scale(1.2);
+	box-shadow: 0px 3px 7px rgba(0,0,0,0.5);
+}
+/* ***** FIN TABLA ***** */
+.total{
+	background : #56baed;
+	font-size  : 1.2rem;
+	font-weight: 700;
+	text-align : right;
+	max-width  : 70%;
+	margin     : 0 auto;
+}
+		.total input{
+			padding  : 1rem;
+			font-size: 1rem;
+			width    : 10%;
+			color    : black;
+		}
+.direccion{
+	border-collapse: collapse;
+	width : 65%;
+	margin: 5rem auto 0;
+}
+	.direccion label{
+		font-size: 1rem;
+		padding  : 1rem;
+	}
+	.direccion input{
+		width      : 100%;
+		font-family: verdana, sans-serif;
+		padding    : 1rem;
+		font-size  : 1rem;
+	}
+.btn{
+	border-collapse: collapse;
+	width          : 70%;
+	margin         : 2rem auto 0;
+}
+	.btn #btn{
+		font-family       : verdana, sans-serif;
+		font-size         : 15px;
+		letter-spacing    : 1px;
+		text-align        : center;
+		font-size         : 13px;
+		border-radius     : 5px;
+		background-color  : #56baed;
+		color             : #fff;
+		padding           : 15px 80px;
+		box-shadow        : 0 10px 30px 0 rgba(95,186,233,0.4);
+		-webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+		-moz-box-shadow   : 0 10px 30px 0 rgba(95,186,233,0.4);
+		-ms-box-shadow    : 0 10px 30px 0 rgba(95,186,233,0.4);
+		-o-box-shadow     : 0 10px 30px 0 rgba(95,186,233,0.4);
+	}
+		.btn #btn:hover{
+			background-color: #39ace7;
+		}
